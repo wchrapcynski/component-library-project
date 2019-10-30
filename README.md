@@ -1,2 +1,2 @@
-# component-library-project
+# React Component Library Project
 Component Library Project
