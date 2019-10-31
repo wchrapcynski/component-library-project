@@ -1,6 +1,5 @@
 import React from 'react';
-import './Button.css'
-import cart from './images/cart.svg'
+import './Button.css';
 
 // This is a functional component - just sent up a little differently as an arrow function!
 const Button = (props) => {
@@ -16,7 +15,8 @@ const Button = (props) => {
       "success-lighter",
       "warning-lighter",
       "default-lighter",
-      "cart"
+      "cart",
+      "cart-notext"
     ];
     if (types.includes(props.type)) {
         classList += ` button-${props.type}`

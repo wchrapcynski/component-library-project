@@ -109,8 +109,15 @@ button {
     color: #33A0FF;
     text-align: right;
     display: initial;
-    padding: 10px 17px 10px 10px;
-    width: 11em;
+}
+.button-cart-notext {
+    background-color: rgba(51, 160, 255, 0.1);
+    border-color: rgba(51, 160, 255, 0);
+    color: #33A0FF;
+    text-align: right;
+    display: initial;
+    width: 4em !important;
+    height: 3em;
 }
 
 .button-cartimage {
@@ -118,12 +125,15 @@ button {
     background-repeat: no-repeat;
     background-position-x: 15px;
     background-position-y: 9px;
+    width: 11em;
+    padding: 10px 17px 10px 10px;
 }
 
 .button-heartimage {
-    background-image: url('images/cart.svg');
+    background-image: url('images/heart.svg');
     background-repeat: no-repeat;
     background-position-x: 15px;
     background-position-y: 9px;
     width: 13.5em;
+    padding: 10px 17px 10px 10px;
 }

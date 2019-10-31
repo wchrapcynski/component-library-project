@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-
+import cart from "./images/cart.svg";
+import heart from "./images/heart.svg";
 import Button from './Button';
 
 storiesOf("Button", module)
@@ -35,4 +36,6 @@ storiesOf("Button", module)
   .add("Warning Outline Large", () => <Button label="Warning" type="warning-lighter" large outline />)
   .add("Default Outline Large", () => <Button label="Default" type="default-lighter" large outline />)
   .add("Add To Cart", () => <Button label="Add To Cart" type="cart" cartimage />)
-  .add("Add To Favorites", () => <Button label="Add To Favorites" type="cart" heartimage />);
+  .add("Add To Favorites", () => <Button label="Add To Favorites" type="cart" heartimage />)
+  .add("Add To Cart-No Text", () => <Button label=" " type="cart-notext" cartimage />)
+  .add("Add To Favorites-No Text", () => <Button label=" " type="cart-notext" heartimage />);
