@@ -2,39 +2,75 @@ button {
     border-radius: 2px;
     padding: 5px 25px;
     color: white;
-    box-shadow: 1px 1px #888888;
-}
-
-button:hover {
-    filter: grayscale(50%);
+    width: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .button-primary {
-    background-color: rgb(55, 55, 238);
-    border:  rgb(55, 55, 238);
+    background-color: #33A0FF;
+    border-color: #33A0FF;
+}
+
+.button-primary-lighter {
+    background-color: rgba(51, 160, 255, 0.1);
+    border-color: rgba(51, 160, 255, 0.0);
+    color: #33A0FF;
+}
+
+.button-primary:hover {
+    background-color: #2E90E5;
+    border-color: #2E90E5;
 }
 
 .button-danger {
-    background-color: rgb(214, 6, 6);
-    border-color: rgb(214, 6, 6);
+    background-color: #FF4858;
+    border-color: #FF4858;
+}
+
+.button-danger-lighter {
+    background-color: rgba(255, 72, 87, 0.1);
+    border-color: rgba(255, 72, 87, 0);
+    color:  #FF4858;
+}
+
+.button-danger:hover {
+    background-color: #F53848;
+    border-color: #F53848;
 }
 
 .button-success {
-    background-color: rgb(5, 184, 5);
-    border-color: rgb(5, 184, 5);
+    background-color: #0AD00A;
+    border-color: #0AD00A;
+}
+
+.button-success:hover {
+    background-color: #07C107;
+    border-color: #07C107;
 }
 
 .button-warning {
-    background-color: rgb(238, 238, 6);
-    border-color: rgb(238, 238, 6);
-    color: black;
+    background-color: #FFC600;
+    border-color: #FFC600;
+}
+
+.button-warning:hover {
+    background-color: #EBB600;
+    border-color: #EBB600;
+}
+
+.button-default {
+    background-color: #22262A;
+    border-color:  #22262A;
+}
+
+.button-default:hover {
+    background-color: #13161A;
+    border-color: #13161A;
 }
 
 .button-large {
     padding: 10px 50px;
-}
-
-.button-danger-outline {
-    background-color: rgb(238, 65, 65);
-    border-color: rgb(214, 6, 6);
+    width: 11em;
 }

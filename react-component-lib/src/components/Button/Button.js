@@ -4,7 +4,18 @@ import './Button.css'
 // This is a functional component - just sent up a little differently as an arrow function!
 const Button = (props) => {
     let classList = ""
-    let types = ['primary', 'danger', 'success', 'warning', 'danger-outline']
+    let types = [
+      "primary",
+      "danger",
+      "success",
+      "warning",
+      "default",
+      "primary-lighter",
+      "danger-lighter",
+      "success-lighter",
+      "warning-lighter",
+      "default-lighter"
+    ];
     if (types.includes(props.type)) {
         classList += ` button-${props.type}`
     }
