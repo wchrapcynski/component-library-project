@@ -14,7 +14,12 @@ const Button = (props) => {
       "danger-lighter",
       "success-lighter",
       "warning-lighter",
-      "default-lighter"
+      "default-lighter",
+      "primary-outline",
+      "danger-outline",
+      "success-outline",
+      "warning-outline",
+      "default-outline"
     ];
     if (types.includes(props.type)) {
         classList += ` button-${props.type}`

@@ -19,6 +19,12 @@ button {
     color: #33A0FF;
 }
 
+.button-primary-outline {
+    background-color: rgba(51, 160, 255, 0);
+    border-color: rgb(51, 160, 255);
+    color: #33A0FF;
+}
+
 .button-primary:hover {
     background-color: #2E90E5;
     border-color: #2E90E5;
@@ -45,6 +51,12 @@ button {
     border-color: #0AD00A;
 }
 
+.button-success-lighter {
+    background-color: rgba(10, 208, 10, 0.1);
+    border-color: rgba(10, 208, 10, 0);
+    color: #0AD00A;
+}
+
 .button-success:hover {
     background-color: #07C107;
     border-color: #07C107;
@@ -55,6 +67,12 @@ button {
     border-color: #FFC600;
 }
 
+.button-warning-lighter {
+    background-color: rgba(255, 200, 0, 0.1);
+    border-color: rgba(255, 200, 0, 0);
+    color: #FFC600;
+}
+
 .button-warning:hover {
     background-color: #EBB600;
     border-color: #EBB600;
@@ -63,6 +81,11 @@ button {
 .button-default {
     background-color: #22262A;
     border-color:  #22262A;
+}
+.button-default-lighter {
+    background-color: rgba(34, 38, 42, 0.1);
+    border-color:  rgba(34, 38, 42, 0);
+    color: #22262A;
 }
 
 .button-default:hover {
