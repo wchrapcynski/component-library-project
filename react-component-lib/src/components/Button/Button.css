@@ -6,6 +6,17 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: none;
+}
+
+.button-large {
+    padding: 10px 50px;
+    width: 11em;
+}
+
+.button-outline {
+    background-color: rgba(255, 255, 255, 0) !important;
+    border: solid 2px !important;
 }
 
 .button-primary {
@@ -15,13 +26,8 @@ button {
 
 .button-primary-lighter {
     background-color: rgba(51, 160, 255, 0.1);
-    border-color: rgba(51, 160, 255, 0.0);
-    color: #33A0FF;
-}
-
-.button-primary-outline {
-    background-color: rgba(51, 160, 255, 0);
-    border-color: rgb(51, 160, 255);
+    border-color: rgba(51, 160, 255, 1.0);
+    border: 0;
     color: #33A0FF;
 }
 
@@ -37,7 +43,8 @@ button {
 
 .button-danger-lighter {
     background-color: rgba(255, 72, 87, 0.1);
-    border-color: rgba(255, 72, 87, 0);
+    border-color: rgb(255, 72, 87);
+    border: 0;
     color:  #FF4858;
 }
 
@@ -53,7 +60,8 @@ button {
 
 .button-success-lighter {
     background-color: rgba(10, 208, 10, 0.1);
-    border-color: rgba(10, 208, 10, 0);
+    border-color: rgb(10, 208, 10);
+    border: 0;
     color: #0AD00A;
 }
 
@@ -69,7 +77,8 @@ button {
 
 .button-warning-lighter {
     background-color: rgba(255, 200, 0, 0.1);
-    border-color: rgba(255, 200, 0, 0);
+    border-color: rgb(255, 200, 0);
+    border: 0;
     color: #FFC600;
 }
 
@@ -84,7 +93,8 @@ button {
 }
 .button-default-lighter {
     background-color: rgba(34, 38, 42, 0.1);
-    border-color:  rgba(34, 38, 42, 0);
+    border-color:  rgb(34, 38, 42);
+    border: 0;
     color: #22262A;
 }
 
@@ -93,7 +103,27 @@ button {
     border-color: #13161A;
 }
 
-.button-large {
-    padding: 10px 50px;
+.button-cart {
+    background-color: rgba(51, 160, 255, 0.1);
+    border-color: rgba(51, 160, 255, 0);
+    color: #33A0FF;
+    text-align: right;
+    display: initial;
+    padding: 10px 17px 10px 10px;
     width: 11em;
+}
+
+.button-cartimage {
+    background-image: url('images/cart.svg');
+    background-repeat: no-repeat;
+    background-position-x: 15px;
+    background-position-y: 9px;
+}
+
+.button-heartimage {
+    background-image: url('images/cart.svg');
+    background-repeat: no-repeat;
+    background-position-x: 15px;
+    background-position-y: 9px;
+    width: 13.5em;
 }
