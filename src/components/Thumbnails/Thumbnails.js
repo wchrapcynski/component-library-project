@@ -5,18 +5,11 @@ import starsYellow from "./images/star-yellow.svg";
 class Thumbnails extends Component {
   constructor(props) {
     super(props);
-    this.state = { stars: parseInt(props.stars), starsImages: "" };
+    this.state = { stars: parseInt(props.stars) };
     this.thumbtext = props.text
-  }
-    
-  displayStars() {
-    for(let i = 0; i < this.state.stars; i++) {
-        this.state.starsImages += `<img src=${starsYellow} />`
-    }
   }
   
   render() {
-    this.displayStars();
     console.log(this.state.starsImages)
     return(
         <div className="thumbnails">
