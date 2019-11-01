@@ -8,7 +8,8 @@ const Forms = props => {
         "email",
         "select",
         "counter",
-        "textAndutton"
+        "textAndutton",
+        "checkbox"
     ];
     if (types.includes(props.type)) {
         classList += ` forms-${props.type}`;
@@ -27,9 +28,6 @@ const Forms = props => {
     }
     if (props.filledselect) {
       classList += " filled-select";
-    }
-    if (props.submitandbuttonlarge) {
-      classList += " submit-text-large submit-button-large";
     }
 
     let counterNum = 1;
@@ -67,6 +65,15 @@ const Forms = props => {
           <input type="text" name={props.data} className={props.submitText} placeholder={props.placeholder}></input>
           <input type="submit" value={props.value} className={props.submitButton}></input>
         </form>
+      </div>
+    );
+  } else if (props.type === "checkbox") {
+    return (
+      <div className="form">
+        <label class="checkbox-container">
+          <input type={props.type} class={props.type} checked={props.ischecked} />
+          <span class="checkmark"></span>
+        </label>
       </div>
     );
   }
