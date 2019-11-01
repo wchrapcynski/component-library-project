@@ -27,8 +27,9 @@ const Forms = props => {
     if (props.filledselect) {
       classList += " filled-select";
     }
+
+    let counterNum = 1;
     
-  
   if(props.type === "email") {
     return (
       <div className="form">
@@ -50,7 +51,7 @@ const Forms = props => {
       <div className="form">
         <div className={props.type}>
           <span className="minus">-</span>
-          <span className="number">{}</span>
+          <span className="number">{counterNum}</span>
           <span className="plus">+</span>
         </div>
       </div>
