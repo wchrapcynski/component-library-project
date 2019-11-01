@@ -36,6 +36,10 @@ select {
     background: url(images/arrowdown.svg) no-repeat;
     background-position-x: 180px;
     background-position-y: 10px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 .medselect {
@@ -55,4 +59,24 @@ select {
 .filled-select {
     background-color: #FAFAFB;
     border-color: rgba(0,0,0,0);
+}
+
+.counter {
+    background-color: #F6F7F8;
+    width: 70px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5em;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    padding: 13px 23px;
+}
+
+.plus, .minus {
+    font-weight: bold;
+    color: #33A0FF;
 }

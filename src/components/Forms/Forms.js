@@ -6,7 +6,8 @@ const Forms = props => {
     let classList = "";
     let types = [
         "email",
-        "select"
+        "select",
+        "counter"
     ];
     if (types.includes(props.type)) {
         classList += ` forms-${props.type}`;
@@ -42,6 +43,16 @@ const Forms = props => {
         <select name="selectList" form="selectForm" className={classList}>
           <option value="select1">{props.selecttext}</option>
         </select>
+      </div>
+    );
+  } else if (props.type === "counter") {
+    return (
+      <div className="form">
+        <div className={props.type}>
+          <span className="minus">-</span>
+          <span className="number">{}</span>
+          <span className="plus">+</span>
+        </div>
       </div>
     );
   }
