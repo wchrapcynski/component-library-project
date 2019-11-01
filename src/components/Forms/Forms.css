@@ -1,11 +1,19 @@
+.form {
+    font-size: .7em;
+}
+
+.text {
+    margin: 0;
+}
+
+.text-none {
+    display: none;
+}
+
 .forms-email {
     font-size: .7em;
     padding: 5px;
     width: 16em;   
-}
-
-.text {
-    font-size: .7em;
 }
 
 .forms-medium-size {
@@ -14,4 +22,32 @@
 
 .forms-large-size {
     padding: 15px
+}
+
+select {
+    padding: 5px 0 5px 7px;
+    line-height: 10px;
+    border: 1px solid #F1F3F4;
+    border-radius: 2px;
+    appearance: none;
+    width: 200px;
+    height: 26px;
+    overflow: hidden;
+    background: url(images/arrowdown.svg) no-repeat;
+    background-position-x: 180px;
+    background-position-y: 10px;
+}
+
+.medselect {
+    height: 32px;
+    width: 300px;
+    background-position-x: 280px;
+    background-position-y: 13px;
+}
+
+.largeselect {
+    height: 38px;
+    width: 300px;
+    background-position-x: 280px;
+    background-position-y: 16px;
 }
