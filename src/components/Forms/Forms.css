@@ -13,7 +13,13 @@
 .forms-email {
     font-size: .7em;
     padding: 5px;
-    width: 16em;   
+    width: 16em;
+    border: 1px solid #F1F3F4;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 .forms-medium-size {
@@ -79,4 +85,37 @@ select {
 .plus, .minus {
     font-weight: bold;
     color: #33A0FF;
+}
+
+.submit-button {
+    padding-top: 2px;
+    border-radius: 2px;
+    color: white;
+    border: none;
+    width: 118px;
+    height: 47px;
+    font-size: 1.2em;
+    -webkit-border-radius: 0 2px 2px 0;
+    -moz-border-radius: 0 2px 2px 0;
+    -ms-border-radius: 0 2px 2px 0;
+    -o-border-radius: 0 2px 2px 0;
+    background-color: #33A0FF;
+    border-color: #33A0FF;
+}
+
+.submit-text {
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+    border-right: 0;
+    border-color: #F1F3F4;
+    border-radius: 2px 0 0 2px;
+    -webkit-border-radius: 2px 0 0 2px;
+    -moz-border-radius: 2px 0 0 2px;
+    -ms-border-radius: 2px 0 0 2px;
+    -o-border-radius: 2px 0 0 2px;
+    height: 43px;
+    width: 170px;
+    padding-left: 11px;
+    font-size: 1.2em;
 }
