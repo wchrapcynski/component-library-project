@@ -115,7 +115,40 @@ select {
     -ms-border-radius: 2px 0 0 2px;
     -o-border-radius: 2px 0 0 2px;
     height: 43px;
-    width: 170px;
-    padding-left: 11px;
+    width: 166px;
+    padding-left: 15px;
+    font-size: 1.2em;
+}
+
+.submit-button-large {
+    padding-top: 2px;
+    border-radius: 2px;
+    color: white;
+    border: none;
+    width: 118px;
+    height: 61px;
+    font-size: 1.2em;
+    -webkit-border-radius: 0 2px 2px 0;
+    -moz-border-radius: 0 2px 2px 0;
+    -ms-border-radius: 0 2px 2px 0;
+    -o-border-radius: 0 2px 2px 0;
+    background-color: #33A0FF;
+    border-color: #33A0FF;
+}
+
+.submit-text-large {
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+    border-right: 0;
+    border-color: #F1F3F4;
+    border-radius: 2px 0 0 2px;
+    -webkit-border-radius: 2px 0 0 2px;
+    -moz-border-radius: 2px 0 0 2px;
+    -ms-border-radius: 2px 0 0 2px;
+    -o-border-radius: 2px 0 0 2px;
+    height: 57px;
+    width: 236px;
+    padding-left: 15px;
     font-size: 1.2em;
 }

@@ -17,4 +17,8 @@ storiesOf("Forms", module)
   .add("Text and Button Small", () => 
   <Forms label="textAndutton" type="textAndutton" action="http://www.bing.com/?" 
     data="search" submitButton="submit-button" submitText="submit-text" value="Redeem" placeholder="Voucher code"
+  />)
+  .add("Text and Button Large", () => 
+  <Forms label="textAndutton" type="textAndutton" action="http://www.bing.com/?" 
+    data="search" submitButton="submit-button-large" submitText="submit-text-large" value="Redeem" placeholder="Voucher code"
   />);

@@ -28,6 +28,9 @@ const Forms = props => {
     if (props.filledselect) {
       classList += " filled-select";
     }
+    if (props.submitandbuttonlarge) {
+      classList += " submit-text-large submit-button-large";
+    }
 
     let counterNum = 1;
     
