@@ -23,6 +23,9 @@ const Forms = props => {
     if (props.largeselect) {
       classList += " largeselect";
     }
+    if (props.filledselect) {
+      classList += " filled-select";
+    }
     
   
   if(props.type === "email") {

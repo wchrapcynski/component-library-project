@@ -51,3 +51,8 @@ select {
     background-position-x: 280px;
     background-position-y: 16px;
 }
+
+.filled-select {
+    background-color: #FAFAFB;
+    border-color: rgba(0,0,0,0);
+}
