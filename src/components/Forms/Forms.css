@@ -156,16 +156,15 @@ select {
 .checkbox-container {
     display: block;
     position: relative;
-    padding-left: 35px;
+    padding-left: 20px;
     margin-bottom: 12px;
     cursor: pointer;
-    font-size: 22px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    font-size: 1.8em;
-    padding-top: 4px;
+    font-size: 1.2em;
+    padding-top: 1px;
 }
 
 .checkbox-container:hover input ~ .checkmark {
@@ -181,15 +180,17 @@ select {
 }
 
 .checkbox-container .checkmark:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
+  left: 3px;
+  top: -1px;
+  width: 4px;
+  height: 9px;
   border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
+  border-width: 0 2px 2px 0;
   transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
 }
 
 .checkbox {
@@ -204,8 +205,8 @@ select {
     position: absolute;
     top: 0;
     left: 0;
-    height: 25px;
-    width: 25px;
+    height: 12px;
+    width: 12px;
     background-color: white;
     border: 3px solid black;
     border-radius: 4px;
