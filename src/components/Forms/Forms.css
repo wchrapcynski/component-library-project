@@ -164,6 +164,8 @@ select {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    font-size: 1.8em;
+    padding-top: 4px;
 }
 
 .checkbox-container:hover input ~ .checkmark {

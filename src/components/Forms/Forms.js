@@ -79,6 +79,7 @@ const Forms = props => {
         <label className={classCheckbox}>
           <input type={props.type} class={props.type} />
           <span className={classCheckmark}></span>
+          <div>{props.checkboxText}</div>
         </label>
       </div>
     );
