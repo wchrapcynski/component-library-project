@@ -218,3 +218,11 @@ select {
   position: absolute;
   display: none;
 }
+
+.checkbox-container-blue input:checked ~ .checkmark {
+  background-color: blue;
+}
+
+.checkmark-blue {
+    border: 3px solid blue;
+}

@@ -4,6 +4,8 @@ import "./Forms.css";
 // This is a functional component - just sent up a little differently as an arrow function!
 const Forms = props => {
     let classList = "";
+    let classCheckbox = "checkbox-container ";
+    let classCheckmark = "checkmark "
     let types = [
         "email",
         "select",
@@ -28,6 +30,10 @@ const Forms = props => {
     }
     if (props.filledselect) {
       classList += " filled-select";
+    }
+    if (props.checkboxBlue) {
+      classCheckbox += " checkbox-container-blue";
+      classCheckmark += " checkmark-blue";
     }
 
     let counterNum = 1;
@@ -70,9 +76,9 @@ const Forms = props => {
   } else if (props.type === "checkbox") {
     return (
       <div className="form">
-        <label class="checkbox-container">
-          <input type={props.type} class={props.type} checked={props.ischecked} />
-          <span class="checkmark"></span>
+        <label className={classCheckbox}>
+          <input type={props.type} class={props.type} />
+          <span className={classCheckmark}></span>
         </label>
       </div>
     );
