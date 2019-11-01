@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Thumbnails.css";
-import starsYellow from "./images/star-yellow.svg";
+import starsImage from "./images/stars.svg";
 
 class Thumbnails extends Component {
   constructor(props) {
@@ -10,13 +10,12 @@ class Thumbnails extends Component {
   }
   
   render() {
-    console.log(this.state.starsImages)
     return(
         <div className="thumbnails">
             <div className="thumbnail-container">
                 <div className="thumbnail-img"></div>
                 <div className="thumbnail-desc">{this.thumbtext}</div>
-                <div className="rating">{this.state.starsImages}</div>
+                <div className="rating"><img src={starsImage} alt="logo"/></div>
             </div>
         </div>
     );
