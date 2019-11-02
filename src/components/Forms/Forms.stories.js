@@ -22,5 +22,5 @@ storiesOf("Forms", module)
         <Forms label="textAndutton" type="textAndutton" action="http://www.bing.com/?"
             data="search" submitButton="submit-button-large" submitText="submit-text-large" value="Redeem" placeholder="Voucher code"
         />)
-    .add("Checkbox Black", () => <Forms label="CheckBox" type="checkbox" checkboxText="Text" />)
-    .add("Checkbox Blue", () => <Forms label="CheckBox" type="checkbox" checkboxText="Text" checkboxBlue />);
+    .add("Checkbox Black", () => <Forms label="CheckBox" type="checkbox" checkboxText="Text" isChecked="" />)
+    .add("Checkbox Blue", () => <Forms label="CheckBox" type="checkbox" checkboxText="Text" isChecked="" checkboxBlue />);

@@ -6,7 +6,9 @@ class Forms extends Component {
         super(props);
         this.state = { types: ["email", "select", "counter", "textAndutton", "checkbox"], classList: "", 
             classCheckbox: "checkbox-container ", classCheckmark: "checkmark ", 
-            counterNum: parseInt(props.starting), counterMax: parseInt(props.max), counterMin: parseInt(props.min), countBy: parseInt(props.by) };
+            counterNum: parseInt(props.starting), counterMax: parseInt(props.max), counterMin: parseInt(props.min), countBy: parseInt(props.by),
+            isChecked: props.isChecked
+        };
     }
 
     counterAdd = () => {
@@ -21,8 +23,15 @@ class Forms extends Component {
         }
     }
 
+    checkbox = () => {
+        if(this.state.isChecked === "") {
+            this.setState({isChecked: "checked"})
+        } else {
+            this.setState({ isChecked: "" })
+        }
+    }
+
     render() {
-        console.log(this.state.counterMax)
         if (this.state.types.includes(this.props.type)) {
             this.state.classList += ` forms-${this.props.type}`;
         }
@@ -84,8 +93,8 @@ class Forms extends Component {
         } else if (this.props.type === "checkbox") {
             return (
                 <div className="form">
-                    <label className={this.state.classCheckbox}>
-                        <input type={this.props.type} class={this.props.type} />
+                    <label className={this.state.classCheckbox} >
+                        <input type={this.props.type} className={this.props.type} onChange={this.checkbox} checked={this.state.isChecked} />
                         <span className={this.state.classCheckmark}></span>
                         <div>{this.props.checkboxText}</div>
                     </label>
