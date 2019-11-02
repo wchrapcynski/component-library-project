@@ -4,35 +4,32 @@ import "./Forms.css";
 class Forms extends Component {
     constructor(props) {
         super(props);
-        this.state = {};
-        this.classList = "";
-        this.classCheckbox = "checkbox-container ";
-        this.classCheckmark = "checkmark "
-        this.types = [ "email", "select", "counter", "textAndutton", "checkbox" ];
+        this.state = { types: ["email", "select", "counter", "textAndutton", "checkbox"], classList: "", 
+            classCheckbox: "checkbox-container ", classCheckmark: "checkmark " };
     }
 
     render() {
-        if (this.types.includes(this.props.type)) {
-            this.classList += ` forms-${this.props.type}`;
+        if (this.state.types.includes(this.props.type)) {
+            this.state.classList += ` forms-${this.props.type}`;
         }
         if (this.props.mediumsize) {
-            this.classList += " forms-medium-size"
+            this.state.classList += " forms-medium-size"
         }
         if (this.props.largesize) {
-            this.classList += " forms-large-size";
+            this.state.classList += " forms-large-size";
         }
         if (this.props.medselect) {
-            this.classList += " medselect"
+            this.state.classList += " medselect"
         }
         if (this.props.largeselect) {
-            this.classList += " largeselect";
+            this.state.classList += " largeselect";
         }
         if (this.props.filledselect) {
-            this.classList += " filled-select";
+            this.state.classList += " filled-select";
         }
         if (this.props.checkboxBlue) {
-            this.classCheckbox += " checkbox-container-blue";
-            this.classCheckmark += " checkmark-blue";
+            this.state.classCheckbox += " checkbox-container-blue";
+            this.state.classCheckmark += " checkmark-blue";
         }
 
         let counterNum = 1;
@@ -41,14 +38,14 @@ class Forms extends Component {
             return (
                 <div className="form">
                     <p className={this.props.text}>{this.props.label}</p>
-                    <input type={this.props.label} placeholder={this.props.label} className={this.classList}
+                    <input type={this.props.label} placeholder={this.props.label} className={this.state.classList}
                     />
                 </div>
             );
         } else if (this.props.type === "select") {
             return (
                 <div className="form">
-                    <select name="selectList" form="selectForm" className={this.classList}>
+                    <select name="selectList" form="selectForm" className={this.state.classList}>
                         <option value="select1">{this.props.selecttext}</option>
                     </select>
                 </div>
@@ -75,9 +72,9 @@ class Forms extends Component {
         } else if (this.props.type === "checkbox") {
             return (
                 <div className="form">
-                    <label className={this.classCheckbox}>
+                    <label className={this.state.classCheckbox}>
                         <input type={this.props.type} class={this.props.type} />
-                        <span className={this.classCheckmark}></span>
+                        <span className={this.state.classCheckmark}></span>
                         <div>{this.props.checkboxText}</div>
                     </label>
                 </div>
