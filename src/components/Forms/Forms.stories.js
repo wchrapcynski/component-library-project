@@ -13,7 +13,7 @@ storiesOf("Forms", module)
     .add("Select Filled Small-Size", () => <Forms label="Select" type="select" selecttext="Select" filledselect />)
     .add("Select Filled Medium-Size", () => <Forms label="Select" type="select" selecttext="Select" medselect filledselect />)
     .add("Select Filled Large-Size", () => <Forms label="Select" type="select" selecttext="Select" largeselect filledselect />)
-    .add("Counter", () => <Forms label="Counter" type="counter" />)
+    .add("Counter", () => <Forms label="Counter" type="counter" max="10" min="0" by ="1" starting="1" />)
     .add("Text and Button Small", () =>
         <Forms label="textAndutton" type="textAndutton" action="http://www.bing.com/?"
             data="search" submitButton="submit-button" submitText="submit-text" value="Redeem" placeholder="Voucher code"

@@ -5,10 +5,24 @@ class Forms extends Component {
     constructor(props) {
         super(props);
         this.state = { types: ["email", "select", "counter", "textAndutton", "checkbox"], classList: "", 
-            classCheckbox: "checkbox-container ", classCheckmark: "checkmark " };
+            classCheckbox: "checkbox-container ", classCheckmark: "checkmark ", 
+            counterNum: parseInt(props.starting), counterMax: parseInt(props.max), counterMin: parseInt(props.min), countBy: parseInt(props.by) };
+    }
+
+    counterAdd = () => {
+        if(this.state.counterNum + this.state.countBy < this.state.counterMax) {
+            this.setState({ counterNum: this.state.counterNum + this.state.countBy })
+        }
+    }
+
+    counterSub = () => {
+        if (this.state.counterNum - this.state.countBy > this.state.counterMin) {
+            this.setState({ counterNum: this.state.counterNum - this.state.countBy })
+        }
     }
 
     render() {
+        console.log(this.state.counterMax)
         if (this.state.types.includes(this.props.type)) {
             this.state.classList += ` forms-${this.props.type}`;
         }
@@ -32,8 +46,6 @@ class Forms extends Component {
             this.state.classCheckmark += " checkmark-blue";
         }
 
-        let counterNum = 1;
-
         if (this.props.type === "email") {
             return (
                 <div className="form">
@@ -54,9 +66,9 @@ class Forms extends Component {
             return (
                 <div className="form">
                     <div className={this.props.type}>
-                        <span className="minus">-</span>
-                        <span className="number">{counterNum}</span>
-                        <span className="plus">+</span>
+                        <span className="minus" onClick={this.counterSub}>-</span>
+                        <span className="number">{this.state.counterNum}</span>
+                        <span className="plus" onClick={this.counterAdd}>+</span>
                     </div>
                 </div>
             );

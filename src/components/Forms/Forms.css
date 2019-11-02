@@ -79,12 +79,14 @@ select {
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
     -o-border-radius: 2px;
-    padding: 13px 23px;
+    padding: 8px 18px;
 }
 
 .plus, .minus {
     font-weight: bold;
     color: #33A0FF;
+    cursor: pointer;
+    padding: 5px;
 }
 
 .submit-button {
