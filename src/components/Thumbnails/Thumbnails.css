@@ -10,16 +10,63 @@
 }
 
 .thumbnail-img {
-    background-image: url(./images/laptop.png);
-    background-size: cover;
-    min-height: 153px;
-    margin: 15px;
+    height: 153px;
+    width: 236px;
+    margin: 20px 15px;
+}
+
+.thumbnail-bottom {
+    padding-top: 20px;
 }
 
 .thumbnail-desc {
     text-align: center;
+    border-top: 1px solid #F6F7F8;
+    width: 230px;
+    margin: 0 auto;
+    padding-top: 20px;
 }
 
 .rating {
     text-align: center;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+}
+
+.star-gray {
+    background-image: url('./images/star-gray.svg');
+    background-size: cover;
+    height: 11px;
+    width: 12px;
+    margin: 0 2px
+}
+
+.star-yellow {
+    background-image: url('./images/star-yellow.svg');
+    background-size: cover;
+    height: 11px;
+    width: 12px;
+    margin: 0 2px
+}
+
+.price {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1.2em;
+}
+
+.sale {
+    color: #FF4858;
+}
+
+.space {
+    display: inline-block;
+    width: 6px;
+}
+
+.retail {
+    text-decoration: line-through;
+    color: #C1C8CE;
 }
