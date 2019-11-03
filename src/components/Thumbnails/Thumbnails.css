@@ -9,6 +9,14 @@
     -o-border-radius: 3px;
 }
 
+.thumbnail-filled {
+    background-color: #FAFAFB;
+}
+
+.thumbnail-desc-dark {
+    border-color: #E5E8EA !important;
+}
+
 .thumbnail-img {
     height: 153px;
     width: 236px;

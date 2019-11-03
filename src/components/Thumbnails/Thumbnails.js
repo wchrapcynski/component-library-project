@@ -4,8 +4,10 @@ import "./Thumbnails.css";
 class Thumbnails extends Component {
   constructor(props) {
     super(props);
-    this.state = { stars: parseInt(props.stars), starImages: ["star-gray", "star-gray", "star-gray", "star-gray", "star-gray"],
-    thumbImage: props.image, salePrice: props.salePrice, retailPrice: props.retailPrice
+    this.state = { blockClass: "thumbnail-container ", descClass: "thumbnail-desc ", stars: parseInt(props.stars), 
+      starImages: ["star-gray", "star-gray", "star-gray", "star-gray", "star-gray"],
+      thumbImage: props.image, salePrice: props.salePrice, retailPrice: props.retailPrice, heartImage: props.heartImage,
+      cartImage: props.cartImage
   };
     this.thumbtext = props.text
   }
@@ -21,18 +23,26 @@ class Thumbnails extends Component {
         this.state.starImages[i] = "star-yellow"
       }
     } 
-    if (this.props.type === "block1") {
+
+    // Adds the correct classes for changing colors of background and horiziontal line
+    if (this.props.backgroundFilled) {
+      this.state.blockClass += "thumbnail-filled "
+      this.state.descClass += "thumbnail-desc-dark "
+    }
+
+    // Vertical Blocks colors, icons, and images are set by props in the story
+    if (this.props.type === "blockv") {
       return(
           <div className="thumbnails">
-              <div className="thumbnail-container">
+              <div className={this.state.blockClass}>
                   <div className="thumbnail-img"><img src={require(`./images/${this.state.thumbImage}.png`)} width="236" /></div>
                   <div className="buttons">
-                    <img src={require(`./images/heartcircle1.svg`)} />
+                    <img src={require(`./images/${this.state.heartImage}.svg`)} />
                     <span className="space"></span>
-                    <img src={require(`./images/cartcircle1.svg`)} />
+                    <img src={require(`./images/${this.state.cartImage}.svg`)} />
                   </div>
                   <div className="thumbnail-bottom">
-                    <div className="thumbnail-desc">{this.thumbtext}</div>
+                    <div className={this.state.descClass}>{this.thumbtext}</div>
                     <div className="rating">
                       <div className={this.state.starImages[0]}></div>
                       <div className={this.state.starImages[1]}></div>
