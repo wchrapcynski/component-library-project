@@ -1,6 +1,6 @@
 {
   "name": "wchrapcynski-component-lib-ga",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "This a component library created for learning purposes",
   "main": "src/index.js",
   "bin": "src/index.js",

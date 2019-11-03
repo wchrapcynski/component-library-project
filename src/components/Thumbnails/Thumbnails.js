@@ -26,7 +26,7 @@ class Thumbnails extends Component {
 
     // Adds the correct classes for changing colors of background and horiziontal line
     if (this.props.backgroundFilled) {
-      this.state.blockClass += "thumbnail-filled "
+      this.state.blockClassV += "thumbnail-filled "
       this.state.descClass += "thumbnail-desc-dark "
     }
 
