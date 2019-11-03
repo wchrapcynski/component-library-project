@@ -21,11 +21,16 @@ class Thumbnails extends Component {
         this.state.starImages[i] = "star-yellow"
       }
     } 
-    if (this.props.type === "block") {
+    if (this.props.type === "block1") {
       return(
           <div className="thumbnails">
               <div className="thumbnail-container">
                   <div className="thumbnail-img"><img src={require(`./images/${this.state.thumbImage}.png`)} width="236" /></div>
+                  <div className="buttons">
+                    <img src={require(`./images/heartcircle1.svg`)} />
+                    <span className="space"></span>
+                    <img src={require(`./images/cartcircle1.svg`)} />
+                  </div>
                   <div className="thumbnail-bottom">
                     <div className="thumbnail-desc">{this.thumbtext}</div>
                     <div className="rating">

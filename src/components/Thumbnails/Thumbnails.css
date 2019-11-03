@@ -15,6 +15,26 @@
     margin: 20px 15px;
 }
 
+.thumbnail-img:hover {
+        opacity: .1;
+}
+
+.thumbnail-img:hover ~ .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    display: none;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    height: 190px;
+    width: 236px;
+    margin: 7px 15px;
+}
+
 .thumbnail-bottom {
     padding-top: 20px;
 }
