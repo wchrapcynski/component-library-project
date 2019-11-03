@@ -36,7 +36,7 @@
 .thumbnail-img {
     height: 153px;
     width: 236px;
-    margin: 40px 15px;
+    margin: 20px 15px;
 }
 
 .thumbnail-img-h {
@@ -104,7 +104,15 @@
     display: flex;
     justify-content: left;
     align-items: center;
-    ;
+}
+
+.rating-small {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
 
 .star-gray {
@@ -147,4 +155,19 @@
 .retail {
     text-decoration: line-through;
     color: #C1C8CE;
+}
+
+.thumbnail-small {
+    width: 324px;
+    height: 158px;
+    display: flex;
+}
+
+.thumbnail-desc-small {
+    padding-top: 15px;
+    font-size: 1.1em;
+}
+
+.thumb-small-right {
+    padding-left: 5px;
 }

@@ -1,7 +1,22 @@
 {
-  "name": "react-component-lib",
-  "version": "0.1.0",
-  "private": true,
+  "name": "wchrapcynski-component-lib-ga",
+  "version": "0.1.1",
+  "description": "This a component library created for learning purposes",
+  "main": "src/index.js",
+  "bin": "src/index.js",
+  "keywords": [
+    "wchrapcynski"
+  ],
+  "author": "William Chrapcynski",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wchrapcynski/component-library-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wchrapcynski/component-library-project/issues"
+  },
+  "homepage": "https://github.com/wchrapcynski/component-library-project#readme",
+  "private": false,
   "dependencies": {
     "react": "^16.11.0",
     "react-dom": "^16.11.0",

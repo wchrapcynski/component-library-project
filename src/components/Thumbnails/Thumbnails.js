@@ -5,12 +5,11 @@ class Thumbnails extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      blockClassV: "thumbnail-container-v ", blockClassH: "thumbnail-container-h ", descClass: "thumbnail-desc ", stars: parseInt(props.stars), 
-      starImages: ["star-gray", "star-gray", "star-gray", "star-gray", "star-gray"],
+      blockClassV: "thumbnail-container-v ", blockClassH: "thumbnail-container-h ", descClass: "thumbnail-desc ", 
+      stars: parseInt(props.stars), starImages: ["star-gray", "star-gray", "star-gray", "star-gray", "star-gray"],
       thumbImage: props.image, salePrice: props.salePrice, retailPrice: props.retailPrice, heartImage: props.heartImage,
-      cartImage: props.cartImage
-  };
-    this.thumbtext = props.text
+      cartImage: props.cartImage, thumbtext: props.text
+    };
   }
 
   render() {
@@ -43,7 +42,7 @@ class Thumbnails extends Component {
                     <img src={require(`./images/${this.state.cartImage}.svg`)} />
                   </div>
                   <div className="thumbnail-bottom">
-                    <div className={this.state.descClass}>{this.thumbtext}</div>
+                    <div className={this.state.descClass}>{this.state.thumbtext}</div>
                     <div className="rating">
                       <div className={this.state.starImages[0]}></div>
                       <div className={this.state.starImages[1]}></div>
@@ -68,8 +67,32 @@ class Thumbnails extends Component {
           <div className={this.state.blockClassH}>
             <div className="thumbnail-img-h"><img src={require(`./images/${this.state.thumbImage}.png`)} width="236" /></div>
             <div className="thumbnail-bottom-h">
-              <div className="thumbnail-desc-h">{this.thumbtext}</div>
+              <div className="thumbnail-desc-h">{this.state.thumbtext}</div>
               <div className="rating-h">
+                <div className={this.state.starImages[0]}></div>
+                <div className={this.state.starImages[1]}></div>
+                <div className={this.state.starImages[2]}></div>
+                <div className={this.state.starImages[3]}></div>
+                <div className={this.state.starImages[4]}></div>
+              </div>
+              <div className="price-h">
+                <span className="sale">${this.state.salePrice}</span>
+                <span className="space"></span>
+                <span className="retail">${this.state.retailPrice}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      );
+    }
+    if (this.props.type === "blockSmall") {
+      return (
+        <div className="thumbnails">
+          <div className="thumbnail-small">
+            <img src={require(`./images/${this.state.thumbImage}.png`)} />
+            <div className="thumb-small-right">
+              <div className="thumbnail-desc-small">{this.state.thumbtext}</div>
+              <div className="rating-small">
                 <div className={this.state.starImages[0]}></div>
                 <div className={this.state.starImages[1]}></div>
                 <div className={this.state.starImages[2]}></div>
