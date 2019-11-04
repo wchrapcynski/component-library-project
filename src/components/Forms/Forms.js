@@ -12,7 +12,7 @@ class Forms extends Component {
     }
 
     counterAdd = () => {
-        if(this.state.counterNum + this.state.countBy < this.state.counterMax) {
+        if(this.state.counterNum + this.state.countBy <= this.state.counterMax) {
             this.setState({ counterNum: this.state.counterNum + this.state.countBy })
         }
     }
