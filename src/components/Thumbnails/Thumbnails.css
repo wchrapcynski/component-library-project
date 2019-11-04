@@ -21,6 +21,12 @@
     display: flex;
 }
 
+.thumbnail-container-inline {
+    width: 870px;
+    height: 288px;
+    display: flex;
+}
+
 .thumbnail-container-h:hover {
     background-color: #FAFAFB;
 }
@@ -45,6 +51,29 @@
     margin: 40px 15px;
 }
 
+.thumbnail-img-inline {
+    height: 270px;
+    width: 270px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #F6F7F8;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    
+}
+
+.thumbnail-img-inline-hot {
+    background-image: url(./images/hot.svg);
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: 10px;
+}
+
 .thumbnail-img:hover {
      opacity: .1;
 }
@@ -65,6 +94,12 @@
     margin: 7px 15px;
 }
 
+.thumbnail-inline-right {
+    padding-left: 30px;
+    height: 270px;
+    width: 600px;
+}
+
 .thumbnail-bottom {
     padding-top: 20px;
 }
@@ -72,6 +107,16 @@
 .thumbnail-bottom-h {
     padding-top: 20px;
     padding-left: 30px;
+}
+
+.thumbnail-bottom-inline {
+   font-size: 1.2em;
+}
+
+hr {
+    opacity: .2;
+    width: 400px;
+    margin: 5px 0 5px 0;
 }
 
 .thumbnail-desc {
@@ -87,6 +132,16 @@
     width: 230px;
     margin: 0 auto;
     padding-top: 45px;
+    font-size: 1.4em;
+}
+
+.thumbnail-desc-small {
+    padding-top: 15px;
+    font-size: 1.1em;
+}
+
+.thumbnail-desc-inline {
+    text-align: left;
     font-size: 1.4em;
 }
 
@@ -110,6 +165,15 @@
     text-align: center;
     padding-top: 15px;
     padding-bottom: 5px;    
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.rating-inline {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 17px;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -161,11 +225,6 @@
     width: 324px;
     height: 158px;
     display: flex;
-}
-
-.thumbnail-desc-small {
-    padding-top: 15px;
-    font-size: 1.1em;
 }
 
 .thumb-small-right {

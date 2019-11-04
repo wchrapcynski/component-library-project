@@ -5,7 +5,8 @@ class Thumbnails extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      blockClassV: "thumbnail-container-v ", blockClassH: "thumbnail-container-h ", descClass: "thumbnail-desc ", 
+      blockClassV: "thumbnail-container-v ", blockClassH: "thumbnail-container-h ", inlineClass: "thumbnail-container-inline",
+      descClass: "thumbnail-desc ", imageInlineClass: "thumbnail-img-inline",
       stars: parseInt(props.stars), starImages: ["star-gray", "star-gray", "star-gray", "star-gray", "star-gray"],
       thumbImage: props.image, salePrice: props.salePrice, retailPrice: props.retailPrice, heartImage: props.heartImage,
       cartImage: props.cartImage, thumbtext: props.text
@@ -28,6 +29,11 @@ class Thumbnails extends Component {
     if (this.props.backgroundFilled) {
       this.state.blockClassV += "thumbnail-filled "
       this.state.descClass += "thumbnail-desc-dark "
+    }
+
+    // Adds Hot to inline
+    if(this.props.hot) {
+      this.state.imageInlineClass += " thumbnail-img-inline-hot"
     }
 
     // Vertical Blocks colors, icons, and images are set by props in the story
@@ -103,6 +109,35 @@ class Thumbnails extends Component {
                 <span className="sale">${this.state.salePrice}</span>
                 <span className="space"></span>
                 <span className="retail">${this.state.retailPrice}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      );
+    }
+    if (this.props.type === "inline") {
+      return (
+        <div className="thumbnails">
+          <div className={this.state.inlineClass}>
+            <div className={this.state.imageInlineClass}><img src={require(`./images/${this.state.thumbImage}.png`)} width="236" /></div>
+            <div className="thumbnail-inline-right">
+              <div className="thumbnail-desc-inline">{this.state.thumbtext}</div>
+              <div className="rating-inline">
+                <div className={this.state.starImages[0]}></div>
+                <div className={this.state.starImages[1]}></div>
+                <div className={this.state.starImages[2]}></div>
+                <div className={this.state.starImages[3]}></div>
+                <div className={this.state.starImages[4]}></div>
+                <span>0 reviews</span>
+                <span>Submit a review</span>
+              </div>
+              <div className="thumbnail-bottom-inline">
+                <hr></hr>
+                <div className="price-h">
+                  <span className="sale">${this.state.salePrice}</span>
+                  <span className="space"></span>
+                  <span className="retail">${this.state.retailPrice}</span>
+                </div>
               </div>
             </div>
           </div>

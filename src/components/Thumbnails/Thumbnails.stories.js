@@ -16,4 +16,7 @@ storiesOf("Thumbnails", module)
     />)
     .add("Black Small", () => <Thumbnails label="blockSmall" type="blockSmall" text="Beats Solo 2 On Ear Headphones - Black"
         stars="3" image="headphones" salePrice="499" retailPrice="599"
+    />)
+    .add("Inline", () => <Thumbnails label="Inline" type="inline" text="Beats Solo 2 On Ear Headphones - Black"
+        stars="3" image="laptop" salePrice="499" retailPrice="599" hot
     />);
