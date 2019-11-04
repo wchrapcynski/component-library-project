@@ -119,17 +119,24 @@ class Thumbnails extends Component {
       return (
         <div className="thumbnails">
           <div className={this.state.inlineClass}>
-            <div className={this.state.imageInlineClass}><img src={require(`./images/${this.state.thumbImage}.png`)} width="236" /></div>
+            <div className={this.state.imageInlineClass}>
+              <img
+                src={require(`./images/${this.state.thumbImage}.png`)}
+                width="236"
+              />
+            </div>
             <div className="thumbnail-inline-right">
-              <div className="thumbnail-desc-inline">{this.state.thumbtext}</div>
+              <div className="thumbnail-desc-inline">
+                {this.state.thumbtext}
+              </div>
               <div className="rating-inline">
                 <div className={this.state.starImages[0]}></div>
                 <div className={this.state.starImages[1]}></div>
                 <div className={this.state.starImages[2]}></div>
                 <div className={this.state.starImages[3]}></div>
                 <div className={this.state.starImages[4]}></div>
-                <span>0 reviews</span>
-                <span>Submit a review</span>
+                <span className="thumbnail-review">0 reviews</span>
+                <span className="thumbnail-submitReview">Submit a review</span>
               </div>
               <div className="thumbnail-bottom-inline">
                 <hr></hr>
@@ -137,6 +144,12 @@ class Thumbnails extends Component {
                   <span className="sale">${this.state.salePrice}</span>
                   <span className="space"></span>
                   <span className="retail">${this.state.retailPrice}</span>
+                </div>
+                <div className="thumbnail-inline-large-desc">
+                  Nunc facilisis sagittis ullamcorper. Proin lectus ipsum,
+                  gravida et mattis vulputate, tristique ut lectus. Sed et
+                  lectus lorem nunc leifend laorevtr istique et congue. Vivamus
+                  adipiscin vulputate g nisl ut dolor ...
                 </div>
               </div>
             </div>

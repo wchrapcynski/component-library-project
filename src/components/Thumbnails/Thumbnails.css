@@ -116,7 +116,7 @@
 hr {
     opacity: .2;
     width: 400px;
-    margin: 5px 0 5px 0;
+    margin: 4px 0 8px 0;
 }
 
 .thumbnail-desc {
@@ -229,4 +229,17 @@ hr {
 
 .thumb-small-right {
     padding-left: 5px;
+}
+
+.thumbnail-review {
+    color: #C1C8CE;
+    padding: 0 15px;
+}
+
+.thumbnail-submitReview {
+    color: #33A0FF;
+}
+
+.thumbnail-inline-large-desc {
+    padding: 15px 0;
 }
