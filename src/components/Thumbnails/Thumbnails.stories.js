@@ -1,6 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import Thumbnails from "./Thumbnails";
+import Buttons from "../Button/Button"
 
 storiesOf("Thumbnails", module)
     .add("Block Vertical", () => <Thumbnails label="BlockV" type="blockv" text="Apple Macbook Pro" 
