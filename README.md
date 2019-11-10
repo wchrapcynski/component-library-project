@@ -5,6 +5,8 @@
 
 This is my first project creating resuable [React](https://reactjs.org/) components using [Storybook](https://storybook.js.org/). It contains a set of items that would work with various types of websites but it will probably be best suited for an online store.
 
+* [Build Preview](https://vigorous-pare-bae683.netlify.com/)
+
 ## Prerequisites
 
 You will need to have [Node JS](https://nodejs.org/en/) installed. 
@@ -12,6 +14,8 @@ You will need to have [Node JS](https://nodejs.org/en/) installed.
 ## Installing
 
 After you download the repo, you can use `npm install` to install the rest of the dependencies. `npm run storybook` will start the server so that you can see the list of stories. Please read the documentation for React and Storybook to obtain information on how to use this repo in your projects.
+
+Another way to install this repo is via npm. You can use the following comment: `npm i wchrapcynski-component-lib-ga`
 
 ## Built With
 * [React JS](https://reactjs.org/)
