@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Thumbnails.css";
+import Button from "../Button/Button"
 
 class Thumbnails extends Component {
   constructor(props) {
@@ -150,6 +151,11 @@ class Thumbnails extends Component {
                   gravida et mattis vulputate, tristique ut lectus. Sed et
                   lectus lorem nunc leifend laorevtr istique et congue. Vivamus
                   adipiscin vulputate g nisl ut dolor ...
+                </div>
+                <div className="thumbnail-inline-buttons">
+                  <Button label="Add to Cart" type="cart" cartimage />
+                  <div className="space"></div>
+                  <Button label=" " type="cart-notext" heartimage />
                 </div>
               </div>
             </div>

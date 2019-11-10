@@ -95,6 +95,7 @@
 }
 
 .thumbnail-inline-right {
+    padding-top: 5px;
     padding-left: 30px;
     height: 270px;
     width: 600px;
@@ -242,4 +243,10 @@ hr {
 
 .thumbnail-inline-large-desc {
     padding: 15px 0;
+}
+
+.thumbnail-inline-buttons {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
 }
