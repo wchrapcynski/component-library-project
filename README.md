@@ -11,4 +11,12 @@ You will need to have [Node JS](https://nodejs.org/en/) installed.
 
 ## Installing
 
-After you download the repo, you can use `npm install` to install the rest of the dependencies. `npm run storybook` will start the server so that you can see the list of stories.
+After you download the repo, you can use `npm install` to install the rest of the dependencies. `npm run storybook` will start the server so that you can see the list of stories. Please read the documentation for React and Storybook to obtain information on how to use this repo in your projects.
+
+## Built With
+* [React JS](https://reactjs.org/)
+* [Storybook](https://storybook.js.org/)
+* [Node JS](https://nodejs.org/en/)
+
+## Author
+William Chrapcynski - React code and story
