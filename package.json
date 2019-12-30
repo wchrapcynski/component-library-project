@@ -18,9 +18,13 @@
   "homepage": "https://github.com/wchrapcynski/component-library-project#readme",
   "private": false,
   "dependencies": {
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0",
-    "react-scripts": "3.2.0"
+    "fibers": "^4.0.2",
+    "node-sass": "^4.13.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "^3.3.0",
+    "sass": "^1.24.0",
+    "typescript": "^3.7.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -46,6 +50,6 @@
     ]
   },
   "devDependencies": {
-    "@storybook/react": "^5.2.5"
+    "@storybook/react": "^5.2.8"
   }
 }
