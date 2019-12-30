@@ -31,12 +31,7 @@ class Thumbnails extends Component {
       this.state.blockClassV += "thumbnail-filled "
       this.state.descClass += "thumbnail-desc-dark "
     }
-
-    // Adds Hot to inline
-    if(this.props.hot) {
-      this.state.imageInlineClass += " thumbnail-img-inline-hot"
-    }
-
+    
     // Vertical Blocks colors, icons, and images are set by props in the story
     if (this.props.type === "blockv") {
       return(
@@ -120,7 +115,13 @@ class Thumbnails extends Component {
       return (
         <div className="thumbnails">
           <div className={this.state.inlineClass}>
-            <div className={this.state.imageInlineClass}>
+            <div
+              className={
+                this.props.hot
+                  ? "thumbnail-img-inline thumbnail-img-inline-hot"
+                  : "thumbnail-img-inline"
+              }
+            >
               <img
                 src={require(`./images/${this.state.thumbImage}.png`)}
                 width="236"
