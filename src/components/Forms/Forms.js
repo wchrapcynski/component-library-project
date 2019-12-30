@@ -34,12 +34,6 @@ class Forms extends Component {
         if (this.state.types.includes(this.props.type)) {
             this.state.classList += ` forms-${this.props.type}`;
         }
-        if (this.props.mediumsize) {
-            this.state.classList += " forms-medium-size"
-        }
-        if (this.props.largesize) {
-            this.state.classList += " forms-large-size";
-        }
         if (this.props.medselect) {
             this.state.classList += " medselect"
         }
@@ -54,7 +48,10 @@ class Forms extends Component {
             return (
                 <div className="form">
                     <p className={this.props.text}>{this.props.label}</p>
-                    <input type={this.props.label} placeholder={this.props.label} className={this.state.classList}
+                    <input type={this.props.label} placeholder={this.props.label} className={
+                        this.props.mediumsize ? "forms-medium-size" : "" ||
+                        this.props.largesize ? "forms-large-size" : ""
+                    }
                     />
                 </div>
             );
