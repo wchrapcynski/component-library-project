@@ -7,7 +7,7 @@ class Thumbnails extends Component {
     super(props);
     this.state = {
       blockClassV: "thumbnail-container-v ", blockClassH: "thumbnail-container-h ", inlineClass: "thumbnail-container-inline",
-      descClass: "thumbnail-desc ", imageInlineClass: "thumbnail-img-inline",
+      descClass: "thumbnail-desc ",
       stars: parseInt(props.stars), starImages: ["star-gray", "star-gray", "star-gray", "star-gray", "star-gray"],
       thumbImage: props.image, salePrice: props.salePrice, retailPrice: props.retailPrice, heartImage: props.heartImage,
       cartImage: props.cartImage, thumbtext: props.text
@@ -31,7 +31,7 @@ class Thumbnails extends Component {
       this.state.blockClassV += "thumbnail-filled "
       this.state.descClass += "thumbnail-desc-dark "
     }
-    
+
     // Vertical Blocks colors, icons, and images are set by props in the story
     if (this.props.type === "blockv") {
       return(
