@@ -34,15 +34,6 @@ class Forms extends Component {
         if (this.state.types.includes(this.props.type)) {
             this.state.classList += ` forms-${this.props.type}`;
         }
-        if (this.props.medselect) {
-            this.state.classList += " medselect"
-        }
-        if (this.props.largeselect) {
-            this.state.classList += " largeselect";
-        }
-        if (this.props.filledselect) {
-            this.state.classList += " filled-select";
-        }
 
         if (this.props.type === "email") {
             return (
@@ -58,8 +49,12 @@ class Forms extends Component {
         } else if (this.props.type === "select") {
             return (
                 <div className="form">
-                    <select name="selectList" form="selectForm" className={this.state.classList}>
-                        <option value="select1">{this.props.selecttext}</option>
+                    <select name="selectList" form="selectForm" className={
+                        (this.props.medselect ? "medselect" : "" ||
+                        this.props.largeselect ? "largeselect" : "") +
+                        (this.props.filledselect ? " filled-select" : "")
+                    }>
+                        <option value="select1">{this.props.selectText}</option>
                     </select>
                 </div>
             );
