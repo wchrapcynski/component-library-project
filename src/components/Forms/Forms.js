@@ -50,10 +50,6 @@ class Forms extends Component {
         if (this.props.filledselect) {
             this.state.classList += " filled-select";
         }
-        if (this.props.checkboxBlue) {
-            this.state.classCheckbox += " checkbox-container-blue";
-            this.state.classCheckmark += " checkmark-blue";
-        }
 
         if (this.props.type === "email") {
             return (
@@ -92,13 +88,24 @@ class Forms extends Component {
             );
         } else if (this.props.type === "checkbox") {
             return (
-                <div className="form">
-                    <label className={this.state.classCheckbox} >
-                        <input type={this.props.type} className={this.props.type} onChange={this.checkbox} checked={this.state.isChecked} />
-                        <span className={this.state.classCheckmark}></span>
-                        <div>{this.props.checkboxText}</div>
-                    </label>
-                </div>
+              <div className="form">
+                <label
+                  className={
+                    this.props.checkboxBlue
+                      ? this.state.classCheckbox + " checkbox-container-blue"
+                      : this.state.classCheckbox }>
+                  <input
+                    type={this.props.type}
+                    className={this.props.type}
+                    onChange={this.checkbox}
+                    checked={this.state.isChecked}/>
+                  <span className={
+                      this.props.checkboxBlue
+                      ? this.state.classCheckmark + " checkmark-blue"
+                      : this.state.classCheckmark}></span>
+                  <div>{this.props.checkboxText}</div>
+                </label>
+              </div>
             );
         }
     }
