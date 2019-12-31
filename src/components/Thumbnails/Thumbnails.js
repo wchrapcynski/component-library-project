@@ -7,25 +7,13 @@ class Thumbnails extends Component {
     super(props);
     this.state = {
       blockClassH: "thumbnail-container-h ", inlineClass: "thumbnail-container-inline",
-      descClass: "thumbnail-desc ",
-      stars: parseInt(props.stars), starImages: ["star-gray", "star-gray", "star-gray", "star-gray", "star-gray"],
+      stars: parseInt(props.stars),
       thumbImage: props.image, salePrice: props.salePrice, retailPrice: props.retailPrice, heartImage: props.heartImage,
       cartImage: props.cartImage, thumbtext: props.text
     };
   }
 
   render() {
-    // sets the color of the stars from props
-    if( this.state.stars >= 5) {
-      for (let i = 0; i < 5; i++) {
-        this.state.starImages[i] = "star-yellow"
-      }
-    } else {
-      for (let i = 0; i < this.state.stars; i++) {
-        this.state.starImages[i] = "star-yellow"
-      }
-    } 
-
     // Vertical Blocks colors, icons, and images are set by props in the story
     if (this.props.type === "blockv") {
       return (
@@ -59,11 +47,11 @@ class Thumbnails extends Component {
                 {this.state.thumbtext}
               </div>
               <div className="rating">
-                <div className={this.state.starImages[0]}></div>
-                <div className={this.state.starImages[1]}></div>
-                <div className={this.state.starImages[2]}></div>
-                <div className={this.state.starImages[3]}></div>
-                <div className={this.state.starImages[4]}></div>
+                <div className={this.state.stars >=1 ? "star-yellow" : "star-gray"}></div>
+                <div className={this.state.stars >=2 ? "star-yellow" : "star-gray"}></div>
+                <div className={this.state.stars >=3 ? "star-yellow" : "star-gray"}></div>
+                <div className={this.state.stars >=4 ? "star-yellow" : "star-gray"}></div>
+                <div className={this.state.stars >=5 ? "star-yellow" : "star-gray"}></div>
               </div>
               <div className="price">
                 <span className="sale">${this.state.salePrice}</span>
@@ -84,11 +72,11 @@ class Thumbnails extends Component {
             <div className="thumbnail-bottom-h">
               <div className="thumbnail-desc-h">{this.state.thumbtext}</div>
               <div className="rating-h">
-                <div className={this.state.starImages[0]}></div>
-                <div className={this.state.starImages[1]}></div>
-                <div className={this.state.starImages[2]}></div>
-                <div className={this.state.starImages[3]}></div>
-                <div className={this.state.starImages[4]}></div>
+                <div className={this.state.stars >=1 ? "star-yellow" : "star-gray"}></div>
+                <div className={this.state.stars >=2 ? "star-yellow" : "star-gray"}></div>
+                <div className={this.state.stars >=3 ? "star-yellow" : "star-gray"}></div>
+                <div className={this.state.stars >=4 ? "star-yellow" : "star-gray"}></div>
+                <div className={this.state.stars >=5 ? "star-yellow" : "star-gray"}></div>
               </div>
               <div className="price-h">
                 <span className="sale">${this.state.salePrice}</span>
@@ -108,11 +96,11 @@ class Thumbnails extends Component {
             <div className="thumb-small-right">
               <div className="thumbnail-desc-small">{this.state.thumbtext}</div>
               <div className="rating-small">
-                <div className={this.state.starImages[0]}></div>
-                <div className={this.state.starImages[1]}></div>
-                <div className={this.state.starImages[2]}></div>
-                <div className={this.state.starImages[3]}></div>
-                <div className={this.state.starImages[4]}></div>
+                <div className={this.state.stars >=1 ? "star-yellow" : "star-gray"}></div>
+                <div className={this.state.stars >=2 ? "star-yellow" : "star-gray"}></div>
+                <div className={this.state.stars >=3 ? "star-yellow" : "star-gray"}></div>
+                <div className={this.state.stars >=4 ? "star-yellow" : "star-gray"}></div>
+                <div className={this.state.stars >=5 ? "star-yellow" : "star-gray"}></div>
               </div>
               <div className="price-h">
                 <span className="sale">${this.state.salePrice}</span>
@@ -145,11 +133,11 @@ class Thumbnails extends Component {
                 {this.state.thumbtext}
               </div>
               <div className="rating-inline">
-                <div className={this.state.starImages[0]}></div>
-                <div className={this.state.starImages[1]}></div>
-                <div className={this.state.starImages[2]}></div>
-                <div className={this.state.starImages[3]}></div>
-                <div className={this.state.starImages[4]}></div>
+                <div className={this.state.stars >=1 ? "star-yellow" : "star-gray"}></div>
+                <div className={this.state.stars >=2 ? "star-yellow" : "star-gray"}></div>
+                <div className={this.state.stars >=3 ? "star-yellow" : "star-gray"}></div>
+                <div className={this.state.stars >=4 ? "star-yellow" : "star-gray"}></div>
+                <div className={this.state.stars >=5 ? "star-yellow" : "star-gray"}></div>
                 <span className="thumbnail-review">0 reviews</span>
                 <span className="thumbnail-submitReview">Submit a review</span>
               </div>
