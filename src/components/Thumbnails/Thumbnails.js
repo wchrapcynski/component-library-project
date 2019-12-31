@@ -49,13 +49,10 @@ class Thumbnails extends Component {
               <img src={require(`./images/${this.state.cartImage}.svg`)} />
             </div>
             <div className="thumbnail-bottom">
-              <div
-                className={
-                  this.props.backgroundFilled
-                    ? "thumbnail-desc thumbnail-desc-dark"
-                    : "thumbnail-desc"
-                }
-              >
+              <div className={this.props.backgroundFilled ? 
+                  "thumbnail-desc thumbnail-desc-dark": 
+                  "thumbnail-desc"
+                }>
                 {this.state.thumbtext}
               </div>
               {this.starDisplay("rating")}
