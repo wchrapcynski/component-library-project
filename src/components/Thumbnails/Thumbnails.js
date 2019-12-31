@@ -31,15 +31,12 @@ class Thumbnails extends Component {
       return (
         <div className="thumbnails">
           <div
-            className={
-              this.props.backgroundFilled
-                ? "thumbnail-filled thumbnail-container-v"
-                : "thumbnail-container-v"
-            }
-          >
+            className={this.props.backgroundFilled ? 
+              "thumbnail-filled thumbnail-container-v" :
+              "thumbnail-container-v"
+            }>
             <div className="thumbnail-img">
-              <img
-                src={require(`./images/${this.state.thumbImage}.png`)}
+              <img src={require(`./images/${this.state.thumbImage}.png`)}
                 width="236"
               />
             </div>
@@ -109,13 +106,11 @@ class Thumbnails extends Component {
           <div className="thumbnail-container-inline">
             <div
               className={
-                this.props.hot
-                  ? "thumbnail-img-inline thumbnail-img-inline-hot"
-                  : "thumbnail-img-inline"
-              }
-            >
-              <img
-                src={require(`./images/${this.state.thumbImage}.png`)}
+                this.props.hot ? 
+                  "thumbnail-img-inline thumbnail-img-inline-hot" :
+                  "thumbnail-img-inline"
+              }>
+              <img src={require(`./images/${this.state.thumbImage}.png`)}
                 width="236"
               />
             </div>
