@@ -232,6 +232,11 @@ hr {
     padding-left: 5px;
 }
 
+.thumbnail-inline-rating-review {
+    display: flex;
+    align-items: center;
+}
+
 .thumbnail-review {
     color: #C1C8CE;
     padding: 0 15px;
