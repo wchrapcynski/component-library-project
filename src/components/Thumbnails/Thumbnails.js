@@ -31,25 +31,38 @@ class Thumbnails extends Component {
       return (
         <div className="thumbnails">
           <div
-            className={this.props.backgroundFilled ? 
-              "thumbnail-filled thumbnail-container-v" :
-              "thumbnail-container-v"
-            }>
+            className={
+              this.props.backgroundFilled
+                ? "thumbnail-filled thumbnail-container-v"
+                : "thumbnail-container-v"
+            }
+          >
             <div className="thumbnail-img">
-              <img src={require(`./images/${this.state.thumbImage}.png`)}
+              <img
+                src={require(`./images/${this.state.thumbImage}.png`)}
                 width="236"
+                alt=""
               />
             </div>
             <div className="buttons">
-              <img src={require(`./images/${this.state.heartImage}.svg`)} />
+              <img
+                src={require(`./images/${this.state.heartImage}.svg`)}
+                alt=""
+              />
               <span className="space"></span>
-              <img src={require(`./images/${this.state.cartImage}.svg`)} />
+              <img
+                src={require(`./images/${this.state.cartImage}.svg`)}
+                alt=""
+              />
             </div>
             <div className="thumbnail-bottom">
-              <div className={this.props.backgroundFilled ? 
-                  "thumbnail-desc thumbnail-desc-dark": 
-                  "thumbnail-desc"
-                }>
+              <div
+                className={
+                  this.props.backgroundFilled
+                    ? "thumbnail-desc thumbnail-desc-dark"
+                    : "thumbnail-desc"
+                }
+              >
                 {this.state.thumbtext}
               </div>
               {this.starDisplay("rating")}
@@ -68,7 +81,13 @@ class Thumbnails extends Component {
       return (
         <div className="thumbnails">
           <div className="thumbnail-container-h">
-            <div className="thumbnail-img-h"><img src={require(`./images/${this.state.thumbImage}.png`)} width="236" /></div>
+            <div className="thumbnail-img-h">
+              <img
+                src={require(`./images/${this.state.thumbImage}.png`)}
+                width="236"
+                alt=""
+              />
+            </div>
             <div className="thumbnail-bottom-h">
               <div className="thumbnail-desc-h">{this.state.thumbtext}</div>
               {this.starDisplay("rating-h")}
@@ -86,7 +105,10 @@ class Thumbnails extends Component {
       return (
         <div className="thumbnails">
           <div className="thumbnail-small">
-            <img src={require(`./images/${this.state.thumbImage}.png`)} />
+            <img
+              src={require(`./images/${this.state.thumbImage}.png`)}
+              alt=""
+            />
             <div className="thumb-small-right">
               <div className="thumbnail-desc-small">{this.state.thumbtext}</div>
               {this.starDisplay("rating-small")}
@@ -106,12 +128,15 @@ class Thumbnails extends Component {
           <div className="thumbnail-container-inline">
             <div
               className={
-                this.props.hot ? 
-                  "thumbnail-img-inline thumbnail-img-inline-hot" :
-                  "thumbnail-img-inline"
-              }>
-              <img src={require(`./images/${this.state.thumbImage}.png`)}
+                this.props.hot
+                  ? "thumbnail-img-inline thumbnail-img-inline-hot"
+                  : "thumbnail-img-inline"
+              }
+            >
+              <img
+                src={require(`./images/${this.state.thumbImage}.png`)}
                 width="236"
+                alt=""
               />
             </div>
             <div className="thumbnail-inline-right">
