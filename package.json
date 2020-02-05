@@ -18,6 +18,7 @@
   "homepage": "https://github.com/wchrapcynski/component-library-project#readme",
   "private": false,
   "dependencies": {
+    "babel-preset-react-app": "^9.1.1",
     "fibers": "^4.0.2",
     "node-sass": "^4.13.1",
     "react": "^16.12.0",
@@ -50,6 +51,10 @@
     ]
   },
   "devDependencies": {
-    "@storybook/react": "^5.3.12"
+    "@storybook/addon-actions": "^5.3.12",
+    "@storybook/react": "^5.3.12",
+    "@storybook/addon-links": "^5.3.12",
+    "@storybook/addons": "^5.3.12",
+    "@storybook/preset-create-react-app": "^1.5.2"
   }
 }
